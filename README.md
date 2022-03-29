@@ -12,6 +12,8 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
 
 *I cannot guarantee this guide will work for everyone (especially with my limited Linux knowledge). If something doesn't work as intended, [you may find a fix here](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting).*
 
+**I recommend you read the guide completely first before proceeding.**
+
 ## Table of Contents
 **Sections labeled under SteamOS are not tested yet.** They are based off of relevant documentation I can find at the time of writing, so they *may* not work.
 
@@ -54,7 +56,7 @@ From [Grapejuice](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-p
 ### SteamOS
 If you're on Steam Deck, you're running SteamOS 3.0. 
 
-Before proceeding, go to desktop mode and execute the following in terminal:
+Before proceeding, go to desktop mode and execute the following in Konsole:
 ```
 sudo steamos-readonly disable
 ```
@@ -67,7 +69,7 @@ Once you've completed the following, head on over to the [Manjaro/Arch](https://
 ### Manjaro/Arch
 If you're on Manjaro, [multilib](https://wiki.archlinux.org/title/official_repositories#multilib) *should* already be enabled by default. If not, or you're using a different Arch-based distro, we'll need to allow it in the `pacman.conf` file.
 
-Access the text editor with the following:
+Access the text editor in Konsole with the following:
 ```
 sudo nano /etc/pacman.conf
 ```
@@ -78,12 +80,12 @@ Then, we'll need to locate a certain area of text. Uncomment (remove the # at th
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 ```
-Save and exit the text editor.
+Once complete, save and exit the text editor.
 
 Now, head on over to [Installation](https://github.com/ricky8k/Grapejuice-on-Arch#Installation) to install the AUR helper and Grapejuice.
 
 ## Installation
-Grapejuice requires an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers) in order to install the package. For this guide, I will be using [yay](https://aur.archlinux.org/packages/yay).
+**Grapejuice requires an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers) in order to install the package.** For this guide, I will be using [yay](https://aur.archlinux.org/packages/yay).
 
 First, we'll navigate to the `/opt` directory:
 ```
@@ -107,7 +109,7 @@ sudo pacman -Syyu
 ```
 
 ### SteamOS
-> ⚠️ Note: These commands are not tested, so I cannot tell if they will work. Should these commands fail, head on over to [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-1).
+> ⚠️ Note: **These commands are not tested**, so I cannot tell if they will work. Should these commands fail, head on over to [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-1).
 
 We'll need to install `base-devel` with our package manager:
 ```
@@ -126,7 +128,7 @@ yay -S grapejuice-git
 Then you're all set! Now, head on over to [Patching](https://github.com/ricky8k/Grapejuice-on-Arch#Patching) to patch the Wine compatibility layer in order for Roblox to run properly.
 
 ### Manjaro/Arch
-If you're on Manjaro or an other Arch distribution, we'll need to perform some additional steps in order to get `makepkg -si` to work as intended.
+If you're on Manjaro or other Arch distribution, we'll need to perform some additional steps in order to get `makepkg -si` to work as intended.
 
 You should be under the `/opt/yay` directory currently. We'll exit that directory, then change ownership to the user (you):
 ```
@@ -142,7 +144,7 @@ Once done, we can now use `makepkg -si`!
 ```
 makepkg -si
 ```
-Now you should be able to install the [Grapejuice](https://aur.archlinux.org/packages/grapejuice-git) repository. Input the following:
+Now you should be able to install the [Grapejuice](https://aur.archlinux.org/packages/grapejuice-git) package. Input the following:
 ```
 yay -S grapejuice-git
 ```
@@ -150,10 +152,10 @@ yay -S grapejuice-git
 Then you're all set! Now, head on over to [Patching](https://github.com/ricky8k/Grapejuice-on-Arch#Patching) to patch the Wine compatibility layer in order for Roblox to run properly.
 
 ## Patching
-In order for Roblox to be playable under Linux, we'll have to patch the Wine compatibility layer. Doing so will fix UI issues, unexpected crashes, and mouse locking with the program.
+**In order for Roblox to be playable under Linux, we'll have to patch the Wine compatibility layer.** *Doing so will fix UI issues, unexpected crashes, and mouse locking with the program.*
 
 ### SteamOS
-> ⚠️ Note: These commands are not tested, so I cannot tell if they will work. Should these commands fail, head on over to [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-2).
+> ⚠️ Note: **These commands are not tested**, so I cannot tell if they will work. Should these commands fail, head on over to [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-2).
 
 First, we'll navigate to the `/tmp` directory with the following:
 ```
@@ -171,7 +173,7 @@ Now run `install.py` with Python:
 python3 install.py
 ```
 
-Once the script finishes, you should be complete! If you run into any issues running Grapejuice, head on over to [Troubleshooting](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting) for a possible fix.
+**Once the script finishes, you should be complete!** If you run into any issues running Grapejuice, head on over to [Troubleshooting](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting) for a possible fix.
 
 ### Manjaro/Arch
 If you use Manjaro, other Arch distribution, or if the SteamOS method does not work, we'll be applying a different script to get Wine patched and running.
@@ -197,7 +199,7 @@ makepkg -si
 ```
 - Press "Enter" when prompted, press "Y", use default "1," then "Y" again.
 
-Roblox should be patched now! If you run into any issues running Grapejuice, head on over to [Troubleshooting](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting) for a possible fix.
+**Roblox should be patched now!** If you run into any issues running Grapejuice, head on over to [Troubleshooting](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting) for a possible fix.
 
 ## Troubleshooting
 - Grapejuice Wiki: https://brinkervii.gitlab.io/grapejuice/docs/Troubleshooting.html
