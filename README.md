@@ -11,9 +11,10 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
 *I cannot guarantee this guide will work for everyone (especially with my limited Linux knowledge). If something doesn't work as intended, I won't be able to help.*
 
 ## Table of Contents
-**Sections labeled under SteamOS are not tested yet.** They are based off of relevant documentation at the time of writing, so they may not work.
+**Sections labeled under SteamOS are not tested yet.** They are based off of relevant documentation I can find at the time of writing, so they *may* not work.
 
 - [Config](https://github.com/ricky8k/Grapejuice-on-Arch#Config)
+  - [Supported Distros](https://github.com/ricky8k/Grapejuice-on-Arch#SupportedDistros)
 - [Preperation](https://github.com/ricky8k/Grapejuice-on-Arch#Preperation)
   - [SteamOS](https://github.com/ricky8k/Grapejuice-on-Arch#SteamOS)
   - [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch)
@@ -28,7 +29,7 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
 ## Config
 Working as of 3/28/22. Tested under a virtual machine, which shouldn't affect the guide (hopefully). *You'll have better performance using Grapejuice on bare metal instead.*
 
-Using [Manjaro KDE Plasma 21.2.5](https://download.manjaro.org/kde/21.2.5/manjaro-kde-21.2.5-220314-linux515.iso) as SteamOS 3.0 [isn't available for general PC use](https://help.steampowered.com/en/faqs/view/1B71-EDF2-EB6D-2BB3) *yet*. Will likely redo under SteamOS when the time comes.
+Using [Manjaro KDE Plasma 21.2.5](https://download.manjaro.org/kde/21.2.5/manjaro-kde-21.2.5-220314-linux515.iso) as SteamOS 3.0 [isn't available for general PC use](https://help.steampowered.com/en/faqs/view/1B71-EDF2-EB6D-2BB3) *yet*. I will likely redo under SteamOS when the time comes.
 
 > For all the tinkerers out there, please note that this system image is not quite SteamOS 3 yet. Depending on what you try to install it on (desktop, another handheld, refrigerator, toaster), it may not work properly. SteamOS 3 proper will come out sometime after launch (and even then it may not work on your toaster).
 
@@ -38,11 +39,19 @@ Using [Manjaro KDE Plasma 21.2.5](https://download.manjaro.org/kde/21.2.5/manjar
 
 Ran under VMware Workstation Pro 16.2.1. Test machine used an AMD Ryzen 7 2700 (4c, 8t allocated) and 6GB of memory. Virtualized display adapter with 3D acceleration was enabled in VM settings.
 
+This copy of Manjaro uses KDE Plasma, which is the same desktop interface on the Steam Deck.
+
+### Supported Distros
+From [Grapejuice](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package/Arch-Linux-and-similar.html):
+> - Arch Linux
+> - Manjaro Linux
+> - SteamOS 3.0
+
 ## Preperation
 ### SteamOS
 If you're on Steam Deck, you're running SteamOS 3.0. 
 
-Before proceeding, you'll need to execute the following in terminal:
+Before proceeding, go to desktop mode and execute the following in terminal:
 ```
 sudo steamos-readonly disable
 ```
@@ -50,10 +59,10 @@ __This command disables the write protection for the main operating system on St
 
 *Remember to enable it again after you've completed this installation, or your Deck will be vulnerable to unauthorized modification.*
 
-Once you've completed the following, head on over to the [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch) section to finish the [Preperation](https://github.com/ricky8k/Grapejuice-on-Arch#Preperation)
+Once you've completed the following, head on over to the [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch) section to finish the [Preperation](https://github.com/ricky8k/Grapejuice-on-Arch#Preperation).
 
 ### Manjaro/Arch
-If you're on Manjaro, [multilib](https://wiki.archlinux.org/title/official_repositories#multilib) *should* already be enabled by default. *However*, if you are unable to use the repo, or you're using a different Arch-based distro, we'll need to allow it in the `pacman.conf` file.
+If you're on Manjaro, [multilib](https://wiki.archlinux.org/title/official_repositories#multilib) *should* already be enabled by default. If not, or you're using a different Arch-based distro, we'll need to allow it in the `pacman.conf` file.
 
 Access the text editor with the following:
 ```
@@ -68,6 +77,8 @@ Include = /etc/pacman.d/mirrorlist
 ```
 Save and exit the text editor.
 
+Now, head on over to [Installation](https://github.com/ricky8k/Grapejuice-on-Arch#Installation) to install the AUR helper and Grapejuice.
+
 ## Installation
 Grapejuice requires an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers) in order to install the package. For this guide, I will be using [yay](https://aur.archlinux.org/packages/yay).
 
@@ -75,7 +86,7 @@ First, we'll navigate to the `/opt` directory:
 ```
 cd /opt
 ```
-Clone https://aur.archlinux.org/yay.git, then enter the new directory:
+Clone the `yay` repo under https://aur.archlinux.org/yay.git, then enter the new directory:
 ```
 sudo git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -104,15 +115,36 @@ Once installed, we can navigate to the `yay` directory and install it on the sys
 cd ~/yay
 makepkg -si
 ```
-After `yay` is installed, we can finish and start installing Grapejuice!
+After `yay` is installed, we can finish and start installing Grapejuice! Use:
 ```
 yay -S grapejuice-git
 ```
 
-Then you're all set! Now, head on over to [Patching](https://github.com/ricky8k/Grapejuice-on-Arch#Patching) to patch Wine and allow Roblox to run properly.
+Then you're all set! Now, head on over to [Patching](https://github.com/ricky8k/Grapejuice-on-Arch#Patching) to patch the Wine compatibility layer in order for Roblox to run properly.
 
 ### Manjaro/Arch
-(WIP)
+If you're on Manjaro or an other Arch distribution, we'll need to make some additional steps in order to get `makepkg -si` to work as intended.
+
+You should be under the `/opt/yay` directory currently. We'll exit that directory, then change ownership to the user (you):
+```
+cd ..
+sudo chown -R [user]:[user] ./yay               # Remember to remove [user] and replace it with your user.
+cd yay
+```
+Make sure you have [make](https://archlinux.org/packages/core/x86_64/make/) installed. Get `make` with the following:
+```
+sudo pacman -S make
+```
+Once done, we can now use `makepkg -si`!
+```
+makepkg -si
+```
+Now you should be able to install the Grapejuice repository. Input the following:
+```
+yay -S grapejuice-git
+```
+
+Then you're all set! Now, head on over to [Patching](https://github.com/ricky8k/Grapejuice-on-Arch#Patching) to patch the Wine compatibility layer in order for Roblox to run properly.
 
 ## Patching
 (WIP)
