@@ -179,11 +179,13 @@ cd /opt
 sudo git clone --depth=1 https://github.com/frogging-family/wine-tkg-git.git
 cd wine-tkg-git
 ```
-Now that `wine-tkg-git`, we can apply the custom patch:
+Now that `wine-tkg-git`, [we can apply the custom patch](https://github.com/e666666/robloxWineBuildGuide/):
 ```
 sudo curl https://raw.githubusercontent.com/e666666/robloxWineBuildGuide/main/roblox-wine-staging-v2.2.patch --output roblox-wine-staging-v2.2.patch
 sudo git apply roblox-wine-staging-v2.2.patch
 ```
+- Mirror: https://raw.githubusercontent.com/ricky8k/Grapejuice-on-Arch/main/WinePatch/v2.2/roblox-wine-staging-v2.2.patch
+
 Once the patch is applied, we'll need ownership of the new folder in order to use `makepkg -si`:
 ```
 sudo chown -R user:user ./wine-tkg-git               # Remember to remove "user" and replace it with your user.
