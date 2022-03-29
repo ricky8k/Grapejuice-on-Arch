@@ -25,6 +25,7 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
   - [SteamOS](https://github.com/ricky8k/Grapejuice-on-Arch#SteamOS-2)
   - [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-2)
 - [Troubleshooting](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting)
+- [Credits](https://github.com/ricky8k/Grapejuice-on-Arch#Credits)
 
 ## Config
 Working as of 3/28/22. Tested under a virtual machine, which shouldn't affect the guide (hopefully). *You'll have better performance using Grapejuice on bare metal instead.*
@@ -200,6 +201,11 @@ Roblox should be patched now! If you run into any issues running Grapejuice, hea
 - Grapejuice Wiki: https://brinkervii.gitlab.io/grapejuice/docs/Troubleshooting.html
 
 (WIP)
+
+## Credits
+- [BrinkerVII](https://gitlab.com/brinkervii) for [Grapejuice](https://gitlab.com/brinkervii/grapejuice)
+- [e666666](https://github.com/e666666) for [robloxWineBuildGuide](https://github.com/e666666/robloxWineBuildGuide/)
+- [Frogging-Family](https://github.com/frogging-family) for [wine-tkg-git](https://github.com/frogging-family/wine-tkg-git)
 
 ## 
 *ricky8k*
