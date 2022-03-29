@@ -11,6 +11,7 @@ This guide serves as an easier reference (for myself mainly) to look back to, [a
 ## Table of Contents
 - [Config](https://github.com/ricky8k/Grapejuice-on-Arch#Config)
 - [Preperation](https://github.com/ricky8k/Grapejuice-on-Arch#Preperation)
+  - [SteamOS](https://github.com/ricky8k/Grapejuice-on-Arch#SteamOS)
 - [Installation](https://github.com/ricky8k/Grapejuice-on-Arch#Installation)
 
 ## Config
@@ -27,3 +28,17 @@ Using [Manjaro KDE Plasma 21.2.5](https://download.manjaro.org/kde/21.2.5/manjar
 Ran under VMware Workstation Pro 16.2.1. Test machine used an AMD Ryzen 7 2700 (4c, 8t allocated) and 6GB of memory. Virtualized display adapter with 3D acceleration was enabled in VM settings.
 
 ## Preperation
+### SteamOS
+If you're on Steam Deck, you're running SteamOS 3.0. 
+
+Before proceeding, you'll need to execute the following in terminal:
+```
+sudo steamos-readonly disable
+```
+__This command disables the write protection for the main operating system on SteamOS__, allowing us unrestricted access to the system files. __This is required for installation to continue.__ Without access, scripts and patches used to get Roblox and Grapejuice running cannot run properly.
+
+*Remember to enable it again after you've completed this installation, or your Deck will be vulnerable to unauthorized modification.*
+
+### Manjaro/Arch
+
+
