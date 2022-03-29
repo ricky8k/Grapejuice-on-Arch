@@ -179,7 +179,7 @@ cd /opt
 sudo git clone --depth=1 https://github.com/frogging-family/wine-tkg-git.git
 cd wine-tkg-git
 ```
-Now that `wine-tkg-git`, [we can apply the custom patch](https://github.com/e666666/robloxWineBuildGuide/):
+Now that we have `wine-tkg-git`, [we can apply the custom patch](https://github.com/e666666/robloxWineBuildGuide/):
 ```
 sudo curl https://raw.githubusercontent.com/e666666/robloxWineBuildGuide/main/roblox-wine-staging-v2.2.patch --output roblox-wine-staging-v2.2.patch
 sudo git apply roblox-wine-staging-v2.2.patch
