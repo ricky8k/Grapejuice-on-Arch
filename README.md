@@ -59,7 +59,7 @@ __This command disables the write protection for the main operating system on St
 
 *Remember to enable it again after you've completed this installation, or your Deck will be vulnerable to unauthorized modification.*
 
-Once you've completed the following, head on over to the [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch) section to finish the [Preperation](https://github.com/ricky8k/Grapejuice-on-Arch#Preperation).
+Once you've completed the following, head on over to the [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch) section to finish the Preparation.
 
 ### Manjaro/Arch
 If you're on Manjaro, [multilib](https://wiki.archlinux.org/title/official_repositories#multilib) *should* already be enabled by default. If not, or you're using a different Arch-based distro, we'll need to allow it in the `pacman.conf` file.
