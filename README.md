@@ -12,7 +12,7 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
 
 *I cannot guarantee this guide will work for everyone (especially with my limited Linux knowledge). If something doesn't work as intended, [you may find a fix here](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting).*
 
-**I recommend you read the guide completely first before proceeding.**
+**I recommend you read the guide in its entirety before proceeding.**
 
 ## Table of Contents
 **Sections labeled under SteamOS are not tested yet.** They are based off of relevant documentation I can find at the time of writing, so they *may* not work.
