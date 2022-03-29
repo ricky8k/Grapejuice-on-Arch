@@ -128,7 +128,7 @@ If you're on Manjaro or an other Arch distribution, we'll need to make some addi
 You should be under the `/opt/yay` directory currently. We'll exit that directory, then change ownership to the user (you):
 ```
 cd ..
-sudo chown -R [user]:[user] ./yay               # Remember to remove [user] and replace it with your user.
+sudo chown -R user:user ./yay               # Remember to remove "user" and replace it with your user.
 cd yay
 ```
 Make sure you have [make](https://archlinux.org/packages/core/x86_64/make/) installed. Get `make` with the following:
@@ -147,7 +147,52 @@ yay -S grapejuice-git
 Then you're all set! Now, head on over to [Patching](https://github.com/ricky8k/Grapejuice-on-Arch#Patching) to patch the Wine compatibility layer in order for Roblox to run properly.
 
 ## Patching
-(WIP)
+In order for Roblox to be playable under Linux, we'll have to patch the Wine compatibility layer. Doing so will fix UI issues and mouse locking with the program.
+
+### SteamOS
+> Note: These commands are not tested, so I cannot tell if they will work. Should these commands fail, head on over to [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-2).
+
+First, we'll navigate to the `/tmp` directory with the following:
+```
+cd /tmp
+```
+We'll be applying a patch using [wget](https://wiki.archlinux.org/title/wget). Install if you haven't already, then we can get our `install.py`.
+```
+sudo pacman -S wget
+wget https://pastebin.com/raw/5SeVb005 -O install.py
+```
+- Mirror: https://github.com/ricky8k/Grapejuice-on-Arch/blob/main/WinePatch/install.py
+
+Now run `install.py` with Python:
+```
+python3 install.py
+```
+
+Once the script finishes, you should be complete! If you run into any issues running Grapejuice, head on over to [Troubleshooting](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting) for a possible fix.
+
+### Manjaro/Arch
+If you use Manjaro, other Arch distribution, or if the SteamOS method does not work, we'll be applying a different script to get Wine patched and running.
+
+We'll navigate to the `/opt` directory and clone the [wine-tkg-git](https://github.com/frogging-family/wine-tkg-git) repository to it:
+```
+cd /opt
+sudo git clone --depth=1 https://github.com/frogging-family/wine-tkg-git.git
+cd wine-tkg-git
+```
+Now that `wine-tkg-git`, we can apply the custom patch:
+```
+sudo curl https://raw.githubusercontent.com/e666666/robloxWineBuildGuide/main/roblox-wine-staging-v2.2.patch --output roblox-wine-staging-v2.2.patch
+sudo git apply roblox-wine-staging-v2.2.patch
+```
+Once the patch is applied, we'll need ownership of the new folder in order to use `makepkg -si`:
+```
+sudo chown -R user:user ./wine-tkg-git               # Remember to remove "user" and replace it with your user.
+cd wine-tkg-git
+makepkg -si
+```
+- Press "Enter" when prompted, press "Y", use default "1," then "Y" again.
+
+Roblox should be patched now! If you run into any issues running Grapejuice, head on over to [Troubleshooting](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting) for a possible fix.
 
 ## Troubleshooting
 (WIP)
