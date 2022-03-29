@@ -12,7 +12,7 @@ This guide serves as an easier reference (for myself mainly) to look back to, [a
 - [Config](https://github.com/ricky8k/Grapejuice-on-Arch#Config)
 - [Preperation](https://github.com/ricky8k/Grapejuice-on-Arch#Preperation)
   - [SteamOS](https://github.com/ricky8k/Grapejuice-on-Arch#SteamOS)
-  - [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#Manjaro)
+  - [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch)
 - [Installation](https://github.com/ricky8k/Grapejuice-on-Arch#Installation)
 
 ## Config
