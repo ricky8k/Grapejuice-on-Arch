@@ -9,9 +9,9 @@ Guide to Grapejuice on Arch-based Linux distros
 This guide serves as an easier reference (for myself mainly) to look back to, [as this guide is a bit sparse](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package/Arch-Linux-and-similar.html).
 
 ## Table of Contents
-- [Config](https://github.com/ricky8k/Grapejuice-on-Arch/edit/main/README.md#Config)
-- [Preperation](https://github.com/ricky8k/Grapejuice-on-Arch/edit/main/README.md#Config)
-- [Installation](https://github.com/ricky8k/Grapejuice-on-Arch/edit/main/README.md#Config)
+- [Config](https://github.com/ricky8k/Grapejuice-on-Arch#Config)
+- [Preperation](https://github.com/ricky8k/Grapejuice-on-Arch#Preperation)
+- [Installation](https://github.com/ricky8k/Grapejuice-on-Arch#Installation)
 
 ## Config
 Working as of 3/28/22. Tested under a virtual machine, which shouldn't affect the guide (hopefully). *You'll have better performance using Grapejuice on bare metal instead.*
