@@ -200,8 +200,6 @@ Roblox should be patched now! If you run into any issues running Grapejuice, hea
 ## Troubleshooting
 - Grapejuice Wiki: https://brinkervii.gitlab.io/grapejuice/docs/Troubleshooting.html
 
-(WIP)
-
 ## Credits
 - [BrinkerVII](https://gitlab.com/brinkervii) for [Grapejuice](https://gitlab.com/brinkervii/grapejuice)
 - [e666666](https://github.com/e666666) for [robloxWineBuildGuide](https://github.com/e666666/robloxWineBuildGuide/)
