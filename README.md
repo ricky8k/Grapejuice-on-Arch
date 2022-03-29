@@ -3,6 +3,7 @@
 *Also known as Roblox on Steam Deck and Arch*
 
 Guide to [Grapejuice](https://gitlab.com/brinkervii/grapejuice) on Arch-based Linux distros
+> Grapejuice is a Wine wrapper application that is tailored to Roblox. The aim is to make running Roblox on Linux as painless as possible.
 
 - Grapejuice: https://gitlab.com/brinkervii/grapejuice
 - Documentation: https://brinkervii.gitlab.io/grapejuice/docs/
