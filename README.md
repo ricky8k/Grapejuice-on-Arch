@@ -1,7 +1,7 @@
 # Grapejuice-on-Arch
 (Work-in-Progress)
 
-Guide to Grapejuice on Arch-based Linux distros
+Guide to [Grapejuice](https://gitlab.com/brinkervii/grapejuice) on Arch-based Linux distros
 
 - Grapejuice: https://gitlab.com/brinkervii/grapejuice
 - Documentation: https://brinkervii.gitlab.io/grapejuice/docs/
@@ -18,6 +18,12 @@ This guide serves as a possible easier reference for inexperienced Linux users (
   - [SteamOS](https://github.com/ricky8k/Grapejuice-on-Arch#SteamOS)
   - [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch)
 - [Installation](https://github.com/ricky8k/Grapejuice-on-Arch#Installation)
+  - [SteamOS](https://github.com/ricky8k/Grapejuice-on-Arch#SteamOS-1)
+  - [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-1)
+- [Patching](https://github.com/ricky8k/Grapejuice-on-Arch#Patching)
+  - [SteamOS](https://github.com/ricky8k/Grapejuice-on-Arch#SteamOS-2)
+  - [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-2)
+- [Troubleshooting](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting)
 
 ## Config
 Working as of 3/28/22. Tested under a virtual machine, which shouldn't affect the guide (hopefully). *You'll have better performance using Grapejuice on bare metal instead.*
@@ -87,7 +93,26 @@ sudo pacman -Syyu
 ```
 
 ### SteamOS
-> Note: These commands are not tested, so I cannot tell if they will work. 
-> Should these commands fail, head on over to [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch2)
+> Note: These commands are not tested, so I cannot tell if they will work. Should these commands fail, head on over to [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-1).
+
+We'll need to install `base-devel` with our package manager:
+```
+sudo pacman -S base-devel
+```
+Once installed, we can navigate to the `yay` directory and install it on the system:
+```
+cd ~/yay
+makepkg -si
+```
+After `yay` is installed, we can finish and start installing Grapejuice!
+```
+yay -S grapejuice-git
+```
+
+Then you're all set! Now, head on over to [Patching](https://github.com/ricky8k/Grapejuice-on-Arch#Patching) to patch Wine and allow Roblox to run properly.
 
 ### Manjaro/Arch
+(WIP)
+
+## Patching
+(WIP)
