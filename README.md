@@ -1,5 +1,5 @@
 # Grapejuice-on-Arch
-(Work-in-Progress)
+*Also known as Roblox on Steam Deck and Arch*
 
 Guide to [Grapejuice](https://gitlab.com/brinkervii/grapejuice) on Arch-based Linux distros
 
