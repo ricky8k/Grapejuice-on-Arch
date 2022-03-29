@@ -196,3 +196,7 @@ Roblox should be patched now! If you run into any issues running Grapejuice, hea
 
 ## Troubleshooting
 (WIP)
+
+## 
+*ricky8k*
+- https://github.com/ricky8k
