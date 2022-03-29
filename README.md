@@ -32,7 +32,7 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
 - [Credits](https://github.com/ricky8k/Grapejuice-on-Arch#Credits)
 
 ## Config
-Working as of 3/28/22. Tested under a virtual machine, which shouldn't affect the guide (hopefully). *You'll have better performance using Grapejuice on bare metal instead.*
+**Working as of 3/28/22.** Tested under a virtual machine, which shouldn't affect the guide (hopefully). *You'll have better performance using Grapejuice on bare metal instead.*
 
 Using [Manjaro KDE Plasma 21.2.5](https://download.manjaro.org/kde/21.2.5/manjaro-kde-21.2.5-220314-linux515.iso) as SteamOS 3.0 [isn't available for general PC use](https://help.steampowered.com/en/faqs/view/1B71-EDF2-EB6D-2BB3) *yet*. I will likely redo under SteamOS when the time comes.
 
