@@ -6,7 +6,7 @@ Guide to [Grapejuice](https://gitlab.com/brinkervii/grapejuice) on Arch-based Li
 - Grapejuice: https://gitlab.com/brinkervii/grapejuice
 - Documentation: https://brinkervii.gitlab.io/grapejuice/docs/
 
-This guide serves as a possible easier reference for inexperienced Linux users (like myself), [as this guide is a bit sparse](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package/Arch-Linux-and-similar.html).
+This guide serves as an easier reference for inexperienced Linux users (like myself), [as this guide is a bit sparse](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package/Arch-Linux-and-similar.html).
 
 *I cannot guarantee this guide will work for everyone (especially with my limited Linux knowledge). If something doesn't work as intended, I won't be able to help.*
 
