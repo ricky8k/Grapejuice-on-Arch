@@ -197,6 +197,8 @@ makepkg -si
 Roblox should be patched now! If you run into any issues running Grapejuice, head on over to [Troubleshooting](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting) for a possible fix.
 
 ## Troubleshooting
+- Grapejuice Wiki: https://brinkervii.gitlab.io/grapejuice/docs/Troubleshooting.html
+
 (WIP)
 
 ## 
