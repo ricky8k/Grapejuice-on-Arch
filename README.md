@@ -116,3 +116,6 @@ Then you're all set! Now, head on over to [Patching](https://github.com/ricky8k/
 
 ## Patching
 (WIP)
+
+## Troubleshooting
+(WIP)
