@@ -226,3 +226,5 @@ makepkg -si
 ## 
 *ricky8k*
 - https://github.com/ricky8k
+
+Updated as of `3/29/22`
