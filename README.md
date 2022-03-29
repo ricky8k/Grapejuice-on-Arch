@@ -14,7 +14,7 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
 **Sections labeled under SteamOS are not tested yet.** They are based off of relevant documentation I can find at the time of writing, so they *may* not work.
 
 - [Config](https://github.com/ricky8k/Grapejuice-on-Arch#Config)
-  - [Supported Distros](https://github.com/ricky8k/Grapejuice-on-Arch#SupportedDistros)
+  - [Supported Distros](https://github.com/ricky8k/Grapejuice-on-Arch#Supported-Distros)
 - [Preperation](https://github.com/ricky8k/Grapejuice-on-Arch#Preperation)
   - [SteamOS](https://github.com/ricky8k/Grapejuice-on-Arch#SteamOS)
   - [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch)
