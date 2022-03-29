@@ -18,6 +18,7 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
 **Sections labeled under SteamOS are not tested yet.** They are based off of relevant documentation I can find at the time of writing, so they *may* not work.
 
 - [Config](https://github.com/ricky8k/Grapejuice-on-Arch#Config)
+  - [System Requirements](https://github.com/ricky8k/Grapejuice-on-Arch#System-Requirements)
   - [Supported Distros](https://github.com/ricky8k/Grapejuice-on-Arch#Supported-Distros)
 - [Preperation](https://github.com/ricky8k/Grapejuice-on-Arch#Preperation)
   - [SteamOS](https://github.com/ricky8k/Grapejuice-on-Arch#SteamOS)
@@ -45,6 +46,19 @@ Using [Manjaro KDE Plasma 21.2.5](https://download.manjaro.org/kde/21.2.5/manjar
 Ran under VMware Workstation Pro 16.2.1. Test machine used an AMD Ryzen 7 2700 (4c, 8t allocated) and 6GB of memory. Virtualized display adapter with 3D acceleration was enabled in VM settings.
 
 This copy of Manjaro uses KDE Plasma, which is the same desktop interface on the Steam Deck.
+
+### System Requirements
+From [Grapejuice](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package/Arch-Linux-and-similar.html):
+> - x86_64 CPU
+> - GPU that supports OpenGL 4.0 or Vulkan (both of which are available on modern GPUs)
+> - x86_64 GNU/Linux system with glibc or amd64 FreeBSD 13.0+ system
+> 
+> While not required, the following setup is suggested:
+> 
+> - Pipewire with pipewire-pulse to be able to use voice chat
+> - Wayland with xwayland for better performance
+
+If you're on Steam Deck, it *should* work without a problem.
 
 ### Supported Distros
 From [Grapejuice](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package/Arch-Linux-and-similar.html):
