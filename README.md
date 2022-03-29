@@ -123,7 +123,7 @@ yay -S grapejuice-git
 Then you're all set! Now, head on over to [Patching](https://github.com/ricky8k/Grapejuice-on-Arch#Patching) to patch the Wine compatibility layer in order for Roblox to run properly.
 
 ### Manjaro/Arch
-If you're on Manjaro or an other Arch distribution, we'll need to make some additional steps in order to get `makepkg -si` to work as intended.
+If you're on Manjaro or an other Arch distribution, we'll need to perform some additional steps in order to get `makepkg -si` to work as intended.
 
 You should be under the `/opt/yay` directory currently. We'll exit that directory, then change ownership to the user (you):
 ```
