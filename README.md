@@ -6,9 +6,9 @@ Guide to Grapejuice on Arch-based Linux distros
 - Grapejuice: https://gitlab.com/brinkervii/grapejuice
 - Documentation: https://brinkervii.gitlab.io/grapejuice/docs/
 
-This guide serves as an easier reference (for myself mainly) to look back to, [as this guide is a bit sparse for inexperienced users](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package/Arch-Linux-and-similar.html).
+This guide serves as a possible easier reference for inexperienced Linux users (like myself), [as this guide is a bit sparse](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package/Arch-Linux-and-similar.html).
 
-*I cannot guarantee this guide will work for everyone (especially with my limited Linux knowledge).*
+*I cannot guarantee this guide will work for everyone (especially with my limited Linux knowledge). If something doesn't work as intended, I won't be able to help.*
 
 ## Table of Contents
 **Sections labeled under SteamOS are not tested yet.** They are based off of relevant documentation at the time of writing, so they may not work.
@@ -44,8 +44,10 @@ __This command disables the write protection for the main operating system on St
 
 *Remember to enable it again after you've completed this installation, or your Deck will be vulnerable to unauthorized modification.*
 
+Once you've completed the following, head on over to the [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch) section to finish the [Preperation](https://github.com/ricky8k/Grapejuice-on-Arch#Preperation)
+
 ### Manjaro/Arch
-If you're on Manjaro, [multilib](https://wiki.archlinux.org/title/official_repositories#multilib) should already be enabled by default. However, if you are unable to use the repo, or you're using a different Arch-based distro, we'll need to allow it in the `pacman.conf` file.
+If you're on Manjaro, [multilib](https://wiki.archlinux.org/title/official_repositories#multilib) *should* already be enabled by default. *However*, if you are unable to use the repo, or you're using a different Arch-based distro, we'll need to allow it in the `pacman.conf` file.
 
 Access the text editor with the following:
 ```
@@ -58,3 +60,34 @@ Then, we'll need to locate a certain area of text. Uncomment (remove the # at th
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 ```
+Save and exit the text editor.
+
+## Installation
+Grapejuice requires an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers) in order to install the package. For this guide, I will be using [yay](https://aur.archlinux.org/packages/yay).
+
+First, we'll navigate to the `/opt` directory:
+```
+cd /opt
+```
+Clone https://aur.archlinux.org/yay.git, then enter the new directory:
+```
+sudo git clone https://aur.archlinux.org/yay.git
+cd yay
+```
+Remove an unnecessary directory:
+```
+sudo rm -r /etc/pacman.d/gnupg/
+```
+Next, we'll need to initialize `pacman-key` to check signed packages. Input the following:
+```
+sudo pacman-key --init
+sudo pacman-key --populate archlinux
+sudo pacman -Sc
+sudo pacman -Syyu
+```
+
+### SteamOS
+> Note: These commands are not tested, so I cannot tell if they will work. 
+> Should these commands fail, head on over to [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch2)
+
+### Manjaro/Arch
