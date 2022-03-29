@@ -150,7 +150,7 @@ yay -S grapejuice-git
 Then you're all set! Now, head on over to [Patching](https://github.com/ricky8k/Grapejuice-on-Arch#Patching) to patch the Wine compatibility layer in order for Roblox to run properly.
 
 ## Patching
-In order for Roblox to be playable under Linux, we'll have to patch the Wine compatibility layer. Doing so will fix UI issues and mouse locking with the program.
+In order for Roblox to be playable under Linux, we'll have to patch the Wine compatibility layer. Doing so will fix UI issues, unexpected crashes, and mouse locking with the program.
 
 ### SteamOS
 > Note: These commands are not tested, so I cannot tell if they will work. Should these commands fail, head on over to [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-2).
