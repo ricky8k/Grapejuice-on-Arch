@@ -175,7 +175,7 @@ First, we'll navigate to the `/tmp` directory with the following:
 ```
 cd /tmp
 ```
-We'll be applying a patch using [wget](https://wiki.archlinux.org/title/wget). Install if you haven't already, then we can get our `install.py`.
+We'll be applying a [pre-compiled Wine patch from Grapejuice](https://brinkervii.gitlab.io/grapejuice/docs/Guides/Installing-Wine.html) using [wget](https://wiki.archlinux.org/title/wget). Install if you haven't already, then we can get our `install.py`.
 ```
 sudo pacman -S wget
 wget https://pastebin.com/raw/5SeVb005 -O install.py
