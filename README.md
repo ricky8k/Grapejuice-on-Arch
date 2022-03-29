@@ -180,7 +180,7 @@ We'll be applying a [pre-compiled Wine patch from Grapejuice](https://brinkervii
 sudo pacman -S wget
 wget https://pastebin.com/raw/5SeVb005 -O install.py
 ```
-- Mirror: https://github.com/ricky8k/Grapejuice-on-Arch/blob/main/WinePatch/install.py
+- Mirror: https://raw.githubusercontent.com/ricky8k/Grapejuice-on-Arch/main/WinePatch/install.py
 
 Now run `install.py` with Python:
 ```
