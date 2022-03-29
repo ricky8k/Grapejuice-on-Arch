@@ -118,7 +118,7 @@ Once installed, we can navigate to the `yay` directory and install it on the sys
 cd ~/yay
 makepkg -si
 ```
-After `yay` is installed, we can finish and start installing Grapejuice! Use:
+After `yay` is installed, we can finish and start installing [Grapejuice](https://aur.archlinux.org/packages/grapejuice-git)! Use:
 ```
 yay -S grapejuice-git
 ```
@@ -142,7 +142,7 @@ Once done, we can now use `makepkg -si`!
 ```
 makepkg -si
 ```
-Now you should be able to install the Grapejuice repository. Input the following:
+Now you should be able to install the [Grapejuice](https://aur.archlinux.org/packages/grapejuice-git) repository. Input the following:
 ```
 yay -S grapejuice-git
 ```
