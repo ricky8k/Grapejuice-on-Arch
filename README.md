@@ -238,6 +238,8 @@ You should be able to pass a mouse/keyboard now under **VM** > **Removable Devic
 - [Frogging-Family](https://github.com/frogging-family) for [wine-tkg-git](https://github.com/frogging-family/wine-tkg-git)
 
 ## 
+[Table of Contents](https://github.com/ricky8k/Grapejuice-on-Arch#Table-of-Contents)
+## 
 *ricky8k*
 - https://github.com/ricky8k
 
