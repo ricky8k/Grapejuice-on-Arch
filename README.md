@@ -33,7 +33,7 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
 - [Credits](https://github.com/ricky8k/Grapejuice-on-Arch#Credits)
 
 ## Config
-**Working as of 3/28/22.** Tested under a virtual machine, which shouldn't affect the guide (hopefully). *You'll have better performance using Grapejuice on bare metal instead.*
+**Working as of 3/30/22.** Tested under a virtual machine, which shouldn't affect the guide (hopefully). *You'll have better performance using Grapejuice on bare metal instead.*
 
 Using [Manjaro KDE Plasma 21.2.5](https://download.manjaro.org/kde/21.2.5/manjaro-kde-21.2.5-220314-linux515.iso) as SteamOS 3.0 [isn't available for general PC use](https://help.steampowered.com/en/faqs/view/1B71-EDF2-EB6D-2BB3) *yet*. I will likely redo under SteamOS when the time comes.
 
@@ -218,6 +218,20 @@ makepkg -si
 ## Troubleshooting
 - Grapejuice Wiki: https://brinkervii.gitlab.io/grapejuice/docs/Troubleshooting.html
 
+### VMware/Virtualization
+If you use VMware Workstation, or other virtualization software similar, you may encounter some issues:
+
+- Mouse capture within VMware can cause delay which is most noticable while playing Roblox, even if **Optimize mouse for games** is set to *Always*.
+
+[The only solution to this problem would be to passthrough a connected mouse to the guest](https://docs.vmware.com/en/VMware-Workstation-Pro/15.0/com.vmware.ws.using.doc/GUID-8B1431E2-5E72-4B85-80BA-43B8875AB090.html) or use a game controller when playing Roblox. *If you decide to pass your mouse to the machine, you will be unable to use it outside of the machine until you shut it down, or connect another mouse to disconnect it from the guest.*
+
+If you wish to go this route, add this to your `.vmx` configuration file, save it then restart the guest:
+```
+usb.generic.allowHID = "TRUE"
+usb.generic.allowLastHID = "TRUE"
+```
+You should be able to pass a mouse/keyboard now under **VM** > **Removable Devices**.
+
 ## Credits
 - [BrinkerVII](https://gitlab.com/brinkervii) for [Grapejuice](https://gitlab.com/brinkervii/grapejuice)
 - [e666666](https://github.com/e666666) for [robloxWineBuildGuide](https://github.com/e666666/robloxWineBuildGuide/)
@@ -227,4 +241,4 @@ makepkg -si
 *ricky8k*
 - https://github.com/ricky8k
 
-Updated as of `3/29/22`
+Updated as of `3/30/22`
