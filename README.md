@@ -45,7 +45,7 @@ Using [Manjaro KDE Plasma 21.2.5](https://download.manjaro.org/kde/21.2.5/manjar
 
 Ran under VMware Workstation Pro 16.2.1. Test machine used an AMD Ryzen 7 2700 (4c, 8t allocated) and 6GB of memory. Virtualized display adapter with 3D acceleration was enabled in VM settings.
 
-This copy of Manjaro uses KDE Plasma, which is the same desktop interface on the Steam Deck.
+This copy of Manjaro uses [KDE Plasma](https://kde.org/plasma-desktop/), which is the same desktop interface on the Steam Deck.
 
 ### System Requirements
 From [Grapejuice](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package/Arch-Linux-and-similar.html):
