@@ -114,13 +114,24 @@ Remove an unnecessary directory:
 ```
 sudo rm -r /etc/pacman.d/gnupg/
 ```
-Next, we'll need to initialize `pacman-key` to check signed packages. Input the following:
+Next, we'll need to initialize `pacman-key` and use `pacman` to check and update packages, just in-case. Input the following:
 ```
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
 sudo pacman -Sc
 sudo pacman -Syyu
 ```
+- `sudo pacman -Sc` - Press "Y" twice.
+> ```
+> ## Your Konsole may not look exact, but it should look something like this:
+> 
+> Cache directory: /var/cache/pacman/pkg/
+> :: Do you want to remove all other packages from cache? [Y/n] Y
+> removing old packages from cache...
+> 
+> Database directory: /var/lib/pacman/
+> :: Do you want to remove unused repositories? [Y/n] Y
+> removing unused sync repositories...```
 
 ### SteamOS
 > ⚠️ Note: **These commands are not tested**, so I cannot tell if they will work. Should these commands fail, head on over to [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-1).
@@ -147,9 +158,11 @@ If you're on Manjaro or other Arch distribution, we'll need to perform some addi
 You should be under the `/opt/yay` directory currently. We'll exit that directory, then change ownership to the user (you):
 ```
 cd ..
-sudo chown -R user:user ./yay               # Remember to remove "user" and replace it with your user.
+sudo chown -R user:user ./yay
 cd yay
 ```
+- `sudo chown -R user:user ./yay ` - Replace "user" with your user (you can find this under the 1st line in `neofetch`)
+
 Make sure you have [make](https://archlinux.org/packages/core/x86_64/make/) installed. Get `make` with the following:
 ```
 sudo pacman -S make
@@ -207,11 +220,12 @@ sudo git apply roblox-wine-staging-v2.2.patch
 
 Once the patch is applied, we'll need ownership of the new folder in order to use `makepkg -si`:
 ```
-sudo chown -R user:user ./wine-tkg-git               # Remember to remove "user" and replace it with your user.
+sudo chown -R user:user ./wine-tkg-git
 cd wine-tkg-git
 makepkg -si
 ```
-- Press "Enter" when prompted, press "Y", use default "1," then "Y" again.
+- `sudo chown -R user:user ./yay ` - Replace "user" with your user (you can find this under the 1st line in `neofetch`)
+- `makepkg -si` - Press "Enter" when prompted, press "Y", use default "1," then "Y" again.
 
 **Roblox should be patched now!** If you run into any issues running Grapejuice, head on over to [Troubleshooting](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting) for a possible fix.
 
