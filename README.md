@@ -45,7 +45,7 @@ Using [Manjaro KDE Plasma 21.2.5](https://download.manjaro.org/kde/21.2.5/manjar
 
 Ran under VMware Workstation Pro 16.2.1. Test machine used an AMD Ryzen 7 2700 (4c, 8t allocated) and 6GB of memory. Virtualized display adapter with 3D acceleration was enabled in VM settings.
 
-This copy of Manjaro uses [KDE Plasma](https://kde.org/plasma-desktop/), which is the same desktop interface on the Steam Deck.
+Manjaro KDE uses [KDE Plasma](https://kde.org/plasma-desktop/), which is the same desktop interface on the Steam Deck. Manjaro is also an Arch-based Linux distro like SteamOS 3.0.
 
 ### System Requirements
 From [Grapejuice](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package/Arch-Linux-and-similar.html):
@@ -59,6 +59,8 @@ From [Grapejuice](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-p
 > - Wayland with xwayland for better performance
 
 If you're on Steam Deck, it *should* work without a problem.
+
+You can find a quick runthrough on your specs using command `neofetch` in Konsole.
 
 ### Supported Distros
 From [Grapejuice](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package/Arch-Linux-and-similar.html):
@@ -149,6 +151,7 @@ After `yay` is installed, we can finish and start installing [Grapejuice](https:
 ```
 yay -S grapejuice-git
 ```
+- `yay -S grapejuice-git` - Press "N" if it tells you about `Diffs to show?`
 
 Then you're all set! Now, head on over to [Patching](https://github.com/ricky8k/Grapejuice-on-Arch#Patching) to patch the Wine compatibility layer in order for Roblox to run properly.
 
@@ -161,7 +164,7 @@ cd ..
 sudo chown -R user:user ./yay
 cd yay
 ```
-- `sudo chown -R user:user ./yay ` - Replace "user" with your user (you can find this under the 1st line in `neofetch`)
+- `sudo chown -R user:user ./yay` - Replace "user" with your user (you can find this under the 1st line in `neofetch`)
 
 Make sure you have [make](https://archlinux.org/packages/core/x86_64/make/) installed. Get `make` with the following:
 ```
@@ -175,6 +178,7 @@ Now you should be able to install the [Grapejuice](https://aur.archlinux.org/pac
 ```
 yay -S grapejuice-git
 ```
+- `yay -S grapejuice-git` - Press "N" if it tells you about `Diffs to show?`
 
 Then you're all set! Now, head on over to [Patching](https://github.com/ricky8k/Grapejuice-on-Arch#Patching) to patch the Wine compatibility layer in order for Roblox to run properly.
 
@@ -203,7 +207,7 @@ python3 install.py
 **Once the script finishes, you should be complete!** If you run into any issues running Grapejuice, head on over to [Troubleshooting](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting) for a possible fix.
 
 ### Manjaro/Arch
-If you use Manjaro, other Arch distribution, or if the SteamOS method does not work, we'll be applying a different script to get Wine patched and running.
+If you use Manjaro, other Arch distribution, or if the SteamOS method does not work, we'll be patching Wine using [wine-tkg-git](https://github.com/frogging-family/wine-tkg-git) and [a custom patch](https://github.com/e666666/robloxWineBuildGuide/)
 
 We'll navigate to the `/opt` directory and clone the [wine-tkg-git](https://github.com/frogging-family/wine-tkg-git) repository to it:
 ```
@@ -226,6 +230,17 @@ makepkg -si
 ```
 - `sudo chown -R user:user ./yay ` - Replace "user" with your user (you can find this under the 1st line in `neofetch`)
 - `makepkg -si` - Press "Enter" when prompted, press "Y", use default "1," then "Y" again.
+> ```
+> ## Your Konsole may not look exact, but it should close to something like this:
+> ## Default "1"
+> 
+> ==> Checking buildtime dependencies...
+> ==> Installing missing dependencies...
+> :: There are 2 providers available for lib32-jack:
+> :: Repository multilib
+>    1) lib32-jack2  2) lib32-pipewire-jack
+> 
+> Enter a number (default=1): 1
 
 **Roblox should be patched now!** If you run into any issues running Grapejuice, head on over to [Troubleshooting](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting) for a possible fix.
 
