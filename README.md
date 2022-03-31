@@ -35,7 +35,7 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
 ## Config
 **Working as of 3/30/22.** Tested under a virtual machine, which shouldn't affect the guide (hopefully). *You'll have better performance using Grapejuice on bare metal instead.*
 
-Using [Manjaro KDE Plasma 21.2.5](https://download.manjaro.org/kde/21.2.5/manjaro-kde-21.2.5-220314-linux515.iso) as SteamOS 3.0 [isn't available for general PC use](https://help.steampowered.com/en/faqs/view/1B71-EDF2-EB6D-2BB3) *yet*. I will likely redo under SteamOS when the time comes.
+Using [Manjaro KDE Plasma 21.2.5](https://manjaro.org/downloads/official/kde/) *yet*. I will likely redo under SteamOS when the time comes.
 
 > For all the tinkerers out there, please note that this system image is not quite SteamOS 3 yet. Depending on what you try to install it on (desktop, another handheld, refrigerator, toaster), it may not work properly. SteamOS 3 proper will come out sometime after launch (and even then it may not work on your toaster).
 
