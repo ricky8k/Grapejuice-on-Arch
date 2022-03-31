@@ -32,7 +32,7 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
 - [Credits](https://github.com/ricky8k/Grapejuice-on-Arch#Credits)
 
 ## Config
-**Working as of 3/30/22.** Tested under a virtual machine, which shouldn't affect the guide (hopefully). *You'll have better performance using Grapejuice on bare metal instead.*
+**Working as of 3/31/22.** Tested reproducible under a virtual machine, which shouldn't affect the guide (hopefully). *You'll have better performance using Grapejuice on bare metal instead.*
 
 Using [Manjaro KDE Plasma 21.2.5](https://manjaro.org/downloads/official/kde/) *yet*. I will likely redo under SteamOS when the time comes.
 
@@ -40,7 +40,7 @@ Using [Manjaro KDE Plasma 21.2.5](https://manjaro.org/downloads/official/kde/) *
 
 <img src="https://user-images.githubusercontent.com/92121005/160516945-ec165b33-ffa8-4c5b-b639-4eccddde21f7.png" width="40">
 
-![image](https://user-images.githubusercontent.com/92121005/160515637-5dfa61ec-399b-49ed-a6ab-e99ba479d773.png)
+![image](https://user-images.githubusercontent.com/92121005/161159785-7693d19e-ce1a-4af5-bc24-d3628e7408a9.png)
 
 Ran under VMware Workstation Pro 16.2.1. Test machine used an AMD Ryzen 7 2700 (4c, 8t allocated) and 6GB of memory. Virtualized display adapter with 3D acceleration was enabled in VM settings.
 
