@@ -244,7 +244,9 @@ makepkg -si
 **Roblox should be patched now!** If you run into any issues running Grapejuice, head on over to [Troubleshooting](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting) for a possible fix.
 
 ## Troubleshooting
-- Grapejuice Wiki: https://brinkervii.gitlab.io/grapejuice/docs/Troubleshooting.html
+You will find most solutions over on the Grapejuice Wiki: https://brinkervii.gitlab.io/grapejuice/docs/Troubleshooting.html
+
+This section serves to troubleshoot issues that are not discussed there.
 
 ### Manjaro/Arch
 #### Unable to install the `wine-tkg-git` patch ([Patching: Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-2))
@@ -263,7 +265,8 @@ Once complete, try to run the script again.
 ### VMware/Virtualization
 If you use VMware Workstation, or other virtualization software similar, you may encounter some issues:
 
-#### Mouse capture within VMware can cause delay which is most noticable while playing Roblox, even if **Optimize mouse for games** is set to *Always*
+#### Mouse input delay is high/unstable
+Mouse capture within VMware can cause delay which is most noticable while playing Roblox, even if **Optimize mouse for games** is set to *Always*
 [The only solution to this problem would be to passthrough a connected mouse to the guest](https://docs.vmware.com/en/VMware-Workstation-Pro/15.0/com.vmware.ws.using.doc/GUID-8B1431E2-5E72-4B85-80BA-43B8875AB090.html) or use a game controller when playing Roblox. *If you decide to pass your mouse to the machine, you will be unable to use it outside of the machine until you shut it down, or connect another mouse to disconnect it from the guest.*
 
 If you wish to go this route, add this to your `.vmx` configuration file, save it then restart the guest:
