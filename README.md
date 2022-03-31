@@ -132,7 +132,8 @@ sudo pacman -Syyu
 > 
 > Database directory: /var/lib/pacman/
 > :: Do you want to remove unused repositories? [Y/n] Y
-> removing unused sync repositories...```
+> removing unused sync repositories...
+> ```
 
 ### SteamOS
 > ⚠️ Note: **These commands are not tested**, so I cannot tell if they will work. Should these commands fail, head on over to [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-1).
