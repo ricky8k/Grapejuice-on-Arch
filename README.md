@@ -258,7 +258,7 @@ You may not have [patch](https://archlinux.org/packages/core/x86_64/patch/) inst
 ```
 sudo pacman -S patch
 ```
-Once complete, try to run the script again.
+Once complete, try installing the patch again.
 
 *If the issue is not resolved, [try following the instructions to install Grapejuice's patch.](https://github.com/ricky8k/Grapejuice-on-Arch#Patching)*
 
