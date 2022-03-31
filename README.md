@@ -27,7 +27,6 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
   - [SteamOS](https://github.com/ricky8k/Grapejuice-on-Arch#SteamOS-1)
   - [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-1)
 - [Patching](https://github.com/ricky8k/Grapejuice-on-Arch#Patching)
-  - [SteamOS](https://github.com/ricky8k/Grapejuice-on-Arch#SteamOS-2)
   - [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-2)
 - [Troubleshooting](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting)
 - [Credits](https://github.com/ricky8k/Grapejuice-on-Arch#Credits)
@@ -185,14 +184,14 @@ Then you're all set! Now, head on over to [Patching](https://github.com/ricky8k/
 ## Patching
 **In order for Roblox to be playable under Linux, we'll have to patch the Wine compatibility layer.** *Doing so will fix UI issues, unexpected crashes, and mouse locking with the program.*
 
-### SteamOS
-> ⚠️ Note: **These commands are not tested**, so I cannot tell if they will work. Should these commands fail, head on over to [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-2).
+We'll be applying a [pre-compiled Wine patch from Grapejuice](https://brinkervii.gitlab.io/grapejuice/docs/Guides/Installing-Wine.html) to get Wine to work. *The following should apply to both SteamOS and other Arch distributions.*
+> If you encounter an issue with this method, head over to the [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-2) part of this section.
 
 First, we'll navigate to the `/tmp` directory with the following:
 ```
 cd /tmp
 ```
-We'll be applying a [pre-compiled Wine patch from Grapejuice](https://brinkervii.gitlab.io/grapejuice/docs/Guides/Installing-Wine.html) using [wget](https://wiki.archlinux.org/title/wget). Install if you haven't already, then we can get our `install.py`.
+We'll be applying the patch using [wget](https://wiki.archlinux.org/title/wget). Install if you haven't already, then we can get our `install.py`.
 ```
 sudo pacman -S wget
 wget https://pastebin.com/raw/5SeVb005 -O install.py
@@ -207,7 +206,7 @@ python3 install.py
 **Once the script finishes, you should be complete!** If you run into any issues running Grapejuice, head on over to [Troubleshooting](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting) for a possible fix.
 
 ### Manjaro/Arch
-If you use Manjaro, other Arch distribution, or if the SteamOS method does not work, we'll be patching Wine using [wine-tkg-git](https://github.com/frogging-family/wine-tkg-git) and [a custom patch](https://github.com/e666666/robloxWineBuildGuide/)
+If you use Manjaro, other Arch distribution, or if the aforementioned method does not work, we'll be patching Wine using [wine-tkg-git](https://github.com/frogging-family/wine-tkg-git) and [a custom patch](https://github.com/e666666/robloxWineBuildGuide/).
 
 We'll navigate to the `/opt` directory and clone the [wine-tkg-git](https://github.com/frogging-family/wine-tkg-git) repository to it:
 ```
@@ -247,11 +246,24 @@ makepkg -si
 ## Troubleshooting
 - Grapejuice Wiki: https://brinkervii.gitlab.io/grapejuice/docs/Troubleshooting.html
 
+### Manjaro/Arch
+#### Unable to install the `wine-tkg-git` patch ([Patching: Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-2))
+If you tried to use `makepkg -si` for [wine-tkg-git](https://github.com/frogging-family/wine-tkg-git), you may have encountered this error or similar:
+```
+==> ERROR: Patch application has failed. The error was logged to /opt/wine-tkg-git/wine-tkg-git/prepare.log for your convenience.
+```
+You may not have [patch](https://archlinux.org/packages/core/x86_64/patch/) installed on your system. Install with the following:
+```
+sudo pacman -S patch
+```
+Once complete, try to run the script again.
+
+*If the issue is not resolved, [try following the instructions to install Grapejuice's patch.](https://github.com/ricky8k/Grapejuice-on-Arch#Patching)*
+
 ### VMware/Virtualization
 If you use VMware Workstation, or other virtualization software similar, you may encounter some issues:
 
-- Mouse capture within VMware can cause delay which is most noticable while playing Roblox, even if **Optimize mouse for games** is set to *Always*.
-
+#### Mouse capture within VMware can cause delay which is most noticable while playing Roblox, even if **Optimize mouse for games** is set to *Always*
 [The only solution to this problem would be to passthrough a connected mouse to the guest](https://docs.vmware.com/en/VMware-Workstation-Pro/15.0/com.vmware.ws.using.doc/GUID-8B1431E2-5E72-4B85-80BA-43B8875AB090.html) or use a game controller when playing Roblox. *If you decide to pass your mouse to the machine, you will be unable to use it outside of the machine until you shut it down, or connect another mouse to disconnect it from the guest.*
 
 If you wish to go this route, add this to your `.vmx` configuration file, save it then restart the guest:
