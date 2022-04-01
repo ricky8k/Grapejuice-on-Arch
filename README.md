@@ -1,6 +1,6 @@
 # Grapejuice-on-Arch <img src="https://user-images.githubusercontent.com/92121005/160626622-e66b02a8-b287-4760-8340-b31fd22b0519.png" width="30">
 
-*Also known as Roblox on Linux, Steam Deck and Arch*
+*Also known as Roblox on Steam Deck and Arch Linux*
 
 Guide to [Grapejuice](https://gitlab.com/brinkervii/grapejuice) on Arch-based Linux distros
 > Grapejuice is a Wine wrapper application that is tailored to Roblox. The aim is to make running Roblox on Linux as painless as possible.
@@ -10,7 +10,7 @@ Guide to [Grapejuice](https://gitlab.com/brinkervii/grapejuice) on Arch-based Li
 
 This guide serves as an easier reference for inexperienced Linux users (like myself), [as this guide is a bit sparse](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package/Arch-Linux-and-similar.html).
 
-*I cannot guarantee this guide will work for everyone (especially with my limited Linux knowledge). If something doesn't work as intended, [you may find a fix here](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting).*
+*I cannot guarantee this guide will work for everyone (especially with my limited Linux knowledge). If something doesn't work as intended, [you might find a fix here](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting).*
 
 **I recommend you read the guide in its entirety before proceeding.**
 
@@ -36,7 +36,7 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
 ## Config
 **Working as of 3/31/22.** Tested reproducible under a virtual machine, which shouldn't affect the guide (hopefully). *You'll have better performance using Grapejuice on bare metal instead.*
 
-Using [Manjaro KDE Plasma 21.2.5](https://manjaro.org/downloads/official/kde/) *yet*. I will likely redo under SteamOS when the time comes.
+Using [Manjaro KDE Plasma 21.2.5](https://manjaro.org/downloads/official/kde/) as SteamOS 3.0 is not available for general use *yet*. I will likely redo under SteamOS when the time comes.
 
 > For all the tinkerers out there, please note that this system image is not quite SteamOS 3 yet. Depending on what you try to install it on (desktop, another handheld, refrigerator, toaster), it may not work properly. SteamOS 3 proper will come out sometime after launch (and even then it may not work on your toaster).
 
@@ -46,18 +46,13 @@ Using [Manjaro KDE Plasma 21.2.5](https://manjaro.org/downloads/official/kde/) *
 
 Ran under VMware Workstation Pro 16.2.1. Test machine used an AMD Ryzen 7 2700 (4c, 8t allocated) and 6GB of memory. Virtualized display adapter with 3D acceleration was enabled in VM settings.
 
-Manjaro KDE uses [KDE Plasma](https://kde.org/plasma-desktop/), which is the same desktop interface on the Steam Deck. Manjaro is also an Arch-based Linux distro like SteamOS 3.0.
+Manjaro KDE uses [KDE Plasma](https://kde.org/plasma-desktop/), which is the same desktop interface on SteamOS 3. Manjaro is also an Arch-based Linux distro like SteamOS 3.0.
 
 ### System Requirements
-From [Grapejuice](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package/Arch-Linux-and-similar.html):
+From [Grapejuice](https://brinkervii.gitlab.io/grapejuice/docs/):
 > - x86_64 CPU
 > - GPU that supports OpenGL 4.0 or Vulkan (both of which are available on modern GPUs)
 > - x86_64 GNU/Linux system with glibc or amd64 FreeBSD 13.0+ system
-> 
-> While not required, the following setup is suggested:
-> 
-> - Pipewire with pipewire-pulse to be able to use voice chat
-> - Wayland with xwayland for better performance
 
 If you're on Steam Deck, it *should* work without a problem.
 
@@ -86,7 +81,7 @@ Once you've completed the following, head on over to the [Manjaro/Arch](https://
 ### Manjaro/Arch
 If you're on Manjaro, [multilib](https://wiki.archlinux.org/title/official_repositories#multilib) *should* already be enabled by default. If not, or you're using a different Arch-based distro, we'll need to allow it in the `pacman.conf` file.
 
-Access the text editor in Konsole with the following:
+Access the text editor `nano` in Konsole with the following:
 ```
 sudo nano /etc/pacman.conf
 ```
@@ -98,6 +93,8 @@ Then, we'll need to locate a certain area of text. Uncomment (remove the # at th
 Include = /etc/pacman.d/mirrorlist
 ```
 Once complete, save and exit the text editor.
+
+- If you're in `nano`, press **Ctrl** + **X** to exit.
 
 Now, head on over to [Installation](https://github.com/ricky8k/Grapejuice-on-Arch#Installation) to install the AUR helper and Grapejuice.
 
@@ -117,7 +114,7 @@ Remove an unnecessary directory:
 ```
 sudo rm -r /etc/pacman.d/gnupg/
 ```
-Next, we'll need to initialize `pacman-key` and use `pacman` to check and update packages, just in-case. Input the following:
+Next, we'll need to initialize `pacman-key` and use `pacman` to check and update all packages, just in-case. Input the following:
 ```
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
