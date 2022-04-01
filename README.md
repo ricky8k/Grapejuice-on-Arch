@@ -15,6 +15,8 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
 **I recommend you read the guide in its entirety before proceeding.**
 
 ## Table of Contents
+> This guide is for Arch Linux users only. [Please refer to the official docs for other distros.](https://brinkervii.gitlab.io/grapejuice/docs/)
+
 **Sections labeled under SteamOS are not tested yet.** They are based off of relevant documentation I can find at the time of writing, so they *may* not work.
 
 - [Config](https://github.com/ricky8k/Grapejuice-on-Arch#Config)
