@@ -34,7 +34,7 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
 - [Credits](https://github.com/ricky8k/Grapejuice-on-Arch#Credits)
 
 ## Config
-**Working as of 3/31/22.** Tested reproducible under a virtual machine, which shouldn't affect the guide (hopefully). *You'll have better performance using Grapejuice on bare metal instead.*
+**Working as of 4/1/22.** Tested reproducible under a virtual machine, which shouldn't affect the guide (hopefully). *You'll have better performance using Grapejuice on bare metal instead.*
 
 Using [Manjaro KDE Plasma 21.2.5](https://manjaro.org/downloads/official/kde/) as SteamOS 3.0 is not available for general use *yet*. I will likely redo under SteamOS when the time comes.
 
@@ -295,4 +295,4 @@ You should be able to pass a mouse/keyboard now under **VM** > **Removable Devic
 *ricky8k*
 - https://github.com/ricky8k
 
-Updated as of `3/31/22`
+Updated as of `4/2/22`
