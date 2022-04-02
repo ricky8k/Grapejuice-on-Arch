@@ -282,7 +282,7 @@ You should be able to pass a mouse/keyboard now under **VM** > **Removable Devic
 - Under **Graphics Settings**, make sure **Roblox Renderer** is set to *OpenGL*. Turn on **Use Mesa OpenGL version override** if it isn't already.
 - Under **Third party application integrations**, set **Use DXVK D3D implementation** off.
 
-<img src="https://user-images.githubusercontent.com/92121005/161161892-3e36495f-a2f3-4ad3-907d-3e194b88872a.png" width="650">
+<img src="https://user-images.githubusercontent.com/92121005/161161892-3e36495f-a2f3-4ad3-907d-3e194b88872a.png" width="660">
 
 ## Credits
 - [BrinkerVII](https://gitlab.com/brinkervii) for [Grapejuice](https://gitlab.com/brinkervii/grapejuice)
