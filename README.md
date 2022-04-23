@@ -295,4 +295,4 @@ You should be able to pass a mouse now under **VM** > **Removable Devices**.
 *ricky8k*
 - https://github.com/ricky8k
 
-Updated as of `4/23/22`
+Updated as of **4/23/22**
