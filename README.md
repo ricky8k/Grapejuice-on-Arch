@@ -279,8 +279,8 @@ You should be able to pass a mouse now under **VM** > **Removable Devices**.
 #### Game crashes unexpectedly due to DXVK error
 [This is not the same issue as the one described on the official docs.](https://brinkervii.gitlab.io/grapejuice/docs/Troubleshooting.html#game-crashing-with-an-unexpected-error-occurred-and-roblox-needs-to-quit) If you have an updated version of Wine and you use VMware, this is due to the limitations of the virtualized GPU used for the guest. You'll need to check the renderer used for Roblox in Grapejuice.
 
-- Under **Graphics Settings**, make sure **Roblox Renderer** is set to *OpenGL*. Turn on **Use Mesa OpenGL version override** if it isn't already.
-- Under **Third party application integrations**, set **Use DXVK D3D implementation** off.
+- Under **Graphics Settings**, make sure **Roblox Renderer** is set to *OpenGL*. Turn *on* **Use Mesa OpenGL version override** if it isn't already.
+- Under **Third party application integrations**, set **Use DXVK D3D implementation** to *off*.
 
 <img src="https://user-images.githubusercontent.com/92121005/161161892-3e36495f-a2f3-4ad3-907d-3e194b88872a.png" width="660">
 
