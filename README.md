@@ -274,7 +274,7 @@ If you wish to go this route, add this to your `.vmx` configuration file, save i
 usb.generic.allowHID = "TRUE"
 usb.generic.allowLastHID = "TRUE"
 ```
-You should be able to pass a mouse/keyboard now under **VM** > **Removable Devices**.
+You should be able to pass a mouse now under **VM** > **Removable Devices**.
 
 #### Game crashes unexpectedly due to DXVK error
 [This is not the same issue as the one described on the official docs.](https://brinkervii.gitlab.io/grapejuice/docs/Troubleshooting.html#game-crashing-with-an-unexpected-error-occurred-and-roblox-needs-to-quit) If you have an updated version of Wine and you use VMware, this is due to the limitations of the virtualized GPU used for the guest. You'll need to check the renderer used for Roblox in Grapejuice.
@@ -295,4 +295,4 @@ You should be able to pass a mouse/keyboard now under **VM** > **Removable Devic
 *ricky8k*
 - https://github.com/ricky8k
 
-Updated as of `4/2/22`
+Updated as of `4/23/22`
