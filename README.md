@@ -248,6 +248,12 @@ You will find most solutions over on the Grapejuice Wiki: https://brinkervii.git
 
 This section serves to troubleshoot issues that are not discussed there.
 
+- [Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#manjaroarch-3)
+  - [Unable to install the `wine-tkg-git` patch](https://github.com/ricky8k/Grapejuice-on-Arch#unable-to-install-the-wine-tkg-git-patch-patching-manjaroarch)
+- [VMware/Virtualization](https://github.com/ricky8k/Grapejuice-on-Arch#vmwarevirtualization)
+  - [Mouse input delay is high/unstable](https://github.com/ricky8k/Grapejuice-on-Arch#mouse-input-delay-is-highunstable)
+  - [Game crashes unexpectedly due to DXVK error](https://github.com/ricky8k/Grapejuice-on-Arch#game-crashes-unexpectedly-due-to-dxvk-error)
+
 ### Manjaro/Arch
 #### Unable to install the `wine-tkg-git` patch ([Patching: Manjaro/Arch](https://github.com/ricky8k/Grapejuice-on-Arch#ManjaroArch-2))
 If you tried to use `makepkg -si` for [wine-tkg-git](https://github.com/frogging-family/wine-tkg-git), you may have encountered this error or similar:
