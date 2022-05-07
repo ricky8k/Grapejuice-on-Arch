@@ -15,6 +15,9 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
 **I recommend you read the guide in its entirety before proceeding.**
 
 ## Get Started
+Table of Contents: https://github.com/ricky8k/Grapejuice-on-Arch/wiki#table-of-contents
+
+##
 Wiki: https://github.com/ricky8k/Grapejuice-on-Arch/wiki
 
 ## 
