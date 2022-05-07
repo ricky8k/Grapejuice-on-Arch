@@ -37,21 +37,28 @@ This guide serves as an easier reference for inexperienced Linux users (like mys
 - [Credits](https://github.com/ricky8k/Grapejuice-on-Arch#Credits)
 
 ## Config
-**Working as of 4/1/22.** Tested reproducible under a virtual machine, which shouldn't affect the guide (hopefully). *You'll have better performance using Grapejuice on bare metal instead.*
+**Working as of 4/1/22.** Tested reproducible under a virtual machine, which shouldn't affect the guide (hopefully). 
 
-Using [Manjaro KDE Plasma 21.2.5](https://manjaro.org/downloads/official/kde/) as SteamOS 3.0 is not available for general use *yet*. I will likely redo under SteamOS when the time comes.
+Tests were done under VMware Workstation Pro 16.2.1. *Grapejuice runs better on bare metal.*
 
-> For all the tinkerers out there, please note that this system image is not quite SteamOS 3 yet. Depending on what you try to install it on (desktop, another handheld, refrigerator, toaster), it may not work properly. SteamOS 3 proper will come out sometime after launch (and even then it may not work on your toaster).
+## Test Configs
+### Manjaro
+Distro: [Manjaro KDE Plasma 21.2.5](https://manjaro.org/downloads/official/kde/)
 
-<img src="https://user-images.githubusercontent.com/92121005/160516945-ec165b33-ffa8-4c5b-b639-4eccddde21f7.png" width="40">
+VM:
+- Processors: 8 (4 processors, 2 cores per)
+- Memory: 6GB
+- Hard Disk (SCSI): 32GB
+
+Additional Settings:
+- **Accelerate 3D graphics** *Enabled*.
 
 ![image](https://user-images.githubusercontent.com/92121005/161159785-7693d19e-ce1a-4af5-bc24-d3628e7408a9.png)
 
-Ran under VMware Workstation Pro 16.2.1. Test machine used an AMD Ryzen 7 2700 (4c, 8t allocated) and 6GB of memory. Virtualized display adapter with 3D acceleration was enabled in VM settings.
+### SteamOS
+wip
 
-Manjaro KDE uses [KDE Plasma](https://kde.org/plasma-desktop/), which is the same desktop interface on SteamOS 3. Manjaro is also an Arch-based Linux distro like SteamOS 3.0.
-
-### System Requirements
+## System Requirements
 From [Grapejuice](https://brinkervii.gitlab.io/grapejuice/docs/):
 > - x86_64 CPU
 > - GPU that supports OpenGL 4.0 or Vulkan (both of which are available on modern GPUs)
@@ -61,7 +68,7 @@ If you're on Steam Deck, it *should* work without a problem.
 
 You can find a quick runthrough on your specs using command `neofetch` in Konsole.
 
-### Supported Distros
+## Supported Distros
 From [Grapejuice](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package/Arch-Linux-and-similar.html):
 > - Arch Linux
 > - Manjaro Linux
