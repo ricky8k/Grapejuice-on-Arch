@@ -10,7 +10,7 @@ Guide to [Grapejuice](https://gitlab.com/brinkervii/grapejuice) on Arch-based Li
 
 This guide serves as an easier reference for inexperienced Linux users (like myself), [as this guide is a bit sparse](https://brinkervii.gitlab.io/grapejuice/docs/Installing-from-package/Arch-Linux-and-similar.html).
 
-*I cannot guarantee this guide will work for everyone (especially with my limited Linux knowledge). If something doesn't work as intended, [you might find a fix here](https://github.com/ricky8k/Grapejuice-on-Arch#Troubleshooting).*
+*I cannot guarantee this guide will work for everyone (especially with my limited Linux knowledge). If something doesn't work as intended, [you might find a fix here](https://github.com/ricky8k/Grapejuice-on-Arch/wiki/Troubleshooting).*
 
 **I recommend you read the guide in its entirety before proceeding.**
 
