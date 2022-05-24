@@ -24,4 +24,4 @@ Wiki: https://github.com/ricky8k/Grapejuice-on-Arch/wiki
 *ricky8k*
 - https://github.com/ricky8k
 
-Updated as of **5/21/22**
+Updated as of **5/24/22**
