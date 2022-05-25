@@ -98,6 +98,20 @@ WINE_VERSIONS = {
             "type": "sha512",
             "value": "78a5227807eb1af4656f4e31f2989c87eabd4754319f44d8b4b9db02a34b75569c2a0b401e5378eb215b56324f8cd8a7f7661f9e5a82bb33d667542f5b838ec6"
         }
+    },
+    "7.6.r14.g6b4b9f1b": {
+        "url": "https://cdn.discordapp.com/attachments/858117357897121822/967108819849199667/debuntu-wine-tkg-staging-fsync-git-7.6.r14.g6b4b9f1b.7z",
+        "hash": {
+            "type": "sha512",
+            "value": "eaa52d360e92eb7715b0db8b414ba0ba15b4cba8e168355ada5d171d6c0f47b4ef8f85fe433e39a152d239b9d03fbe4a9c11851c86415d65c4cd2658560faf49"
+        }
+    },
+    "7.7.r0.g9df73ee3": {
+        "url": "https://cdn.discordapp.com/attachments/858117357897121822/967687344796893285/debuntu-wine-tkg-staging-fsync-git-7.7.r0.g9df73ee3.7z",
+        "hash": {
+            "type": "sha512",
+            "value": "019ce0d97f7b6f504db51954bc79761d078062c1a7b69f349de380b2a9c9081de11b6f1cabe9665cbcee28ebb9a20cd57519bc0dc795401d80a6b55a04efe3ed"
+        }
     }
 }
 
